@@ -6,6 +6,7 @@ const notes=new Map();
 const el=x=>document.getElementById(x);
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const roleName=x=>({HEAD:'HEAD',MERGE_GROUP:'QUEUE',MERGED_RESULT:'RESULT',TEST_MERGE:'TEST MERGE'}[x]||x);
+const roleDescription=x=>({HEAD:'PR head commit',MERGE_GROUP:'merge-group commit',MERGED_RESULT:'merged-result commit',TEST_MERGE:'test-merge commit'}[x]||x);
 const stateName=x=>({SATISFIED:'PASS',FAILED:'FAIL',NOT_OBSERVED:'NO RECORD',PENDING:'PENDING',AMBIGUOUS:'AMBIGUOUS',INCONCLUSIVE:'INCONCLUSIVE'}[x]||'UNKNOWN');
 const caze=()=>doc.reports[caseIndex],row=()=>caze().rows[checkIndex],cell=()=>row().cells[subjectIndex];
 const safeLink=url=>{try{let x=new URL(url);return x.protocol==='https:'&&x.host==='github.com'&&!x.username&&!x.password?url:null}catch{return null}};
@@ -17,17 +18,20 @@ function chooseCheck(index){if(!caze().rows[index])return;checkIndex=index;const
 function chooseSubject(index){if(!row().cells[index])return;subjectIndex=index;renderSources();renderDetails();}
 function renderCases(){const opts=doc.reports.map((c,i)=>`<option value="${i}">${escapeHtml(c.repository)}  |  #${c.pr}</option>`).join('');el('caseSelect').innerHTML=opts;el('caseSelect').value=caseIndex}
 function visibleRows(){const q=el('filter').value.toLowerCase().trim(),v=el('viewSelect').value;return caze().rows.map((r,i)=>({r,i})).filter(({r})=>r.context.toLowerCase().includes(q)&&(v==='all'||v==='contrasts'&&!!r.minimal_witness||v==='incomplete'&&r.cells.some(x=>['NOT_OBSERVED','PENDING','AMBIGUOUS','INCONCLUSIVE'].includes(x.state))))}
-function renderChecks(){const c=caze(),roles=c.roles;el('checkHead').innerHTML=`<tr><th>Check context</th>${[0,1,2].map(j=>`<th>${roles[j]?escapeHtml(roleName(roles[j])):''}</th>`).join('')}<th>Finding</th></tr>`;
- el('checkBody').innerHTML=visibleRows().map(({r,i})=>{const outcomes=r.cells.map(x=>stateName(x.state));const finding=r.minimal_witness?'CONTRAST':outcomes.includes('NO RECORD')||['PENDING','AMBIGUOUS','INCONCLUSIVE'].some(x=>outcomes.includes(x))?'INCOMPLETE':'SAME RECORDED';return `<tr data-row="${i}" class="${i===checkIndex?'selected':''}" aria-selected="${i===checkIndex}"><td tabindex="0">${escapeHtml(r.context)}</td>${[0,1,2].map(j=>`<td data-cell="${j}" tabindex="0">${outcomes[j]?escapeHtml(outcomes[j]):''}</td>`).join('')}<td>${finding}</td></tr>`}).join('')||'<tr><td colspan="5">No checks match this filter.</td></tr>';
+function renderChecks(){const c=caze(),roles=c.roles,visible=visibleRows();let selectionChanged=false;
+ if(visible.length&&!visible.some(({i})=>i===checkIndex)){checkIndex=visible[0].i;const w=row().minimal_witness;const wi=w?roles.indexOf(w.subjects[1]):-1;subjectIndex=wi>=0?wi:0;selectionChanged=true;}
+ el('roleGuide').textContent=roles.map(x=>`${roleName(x)} = ${roleDescription(x)}`).join('  |  ');el('checkHead').innerHTML=`<tr><th>Check context</th>${[0,1,2].map(j=>`<th>${roles[j]?escapeHtml(roleName(roles[j])):''}</th>`).join('')}<th>Finding</th></tr>`;
+ el('checkBody').innerHTML=visible.map(({r,i})=>{const outcomes=r.cells.map(x=>stateName(x.state));const finding=r.minimal_witness?'CONTRAST':outcomes.includes('NO RECORD')||['PENDING','AMBIGUOUS','INCONCLUSIVE'].some(x=>outcomes.includes(x))?'INCOMPLETE':'NO CONTRAST';return `<tr data-row="${i}" class="${i===checkIndex?'selected':''}" aria-selected="${i===checkIndex}"><td tabindex="0">${escapeHtml(r.context)}</td>${[0,1,2].map(j=>`<td data-cell="${j}" tabindex="0">${outcomes[j]?escapeHtml(outcomes[j]):''}</td>`).join('')}<td>${finding}</td></tr>`}).join('')||'<tr><td colspan="5">No checks match this filter.</td></tr>';
  for(const tr of el('checkBody').querySelectorAll('[data-row]')){
    const n=Number(tr.dataset.row);tr.onclick=e=>{const td=e.target.closest('[data-cell]');chooseCheck(n);if(td){const index=Number(td.dataset.cell);if(index<caze().roles.length)chooseSubject(index)}};
    for(const td of tr.querySelectorAll('[tabindex]'))td.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();td.click()}};
  }
+ if(selectionChanged){renderSources();renderDetails();}
  el('caseSummary').textContent=`${c.repository} #${c.pr}  |  ${c.rows.length} named checks  |  ${c.verified_observations} ${imported?'supplied Check Runs':'selected public Check Runs'}`;
 }
 function renderSources(){el('selectedCheck').textContent=row().context;el('sourceBody').innerHTML=row().cells.map((x,i)=>`<tr data-subject="${i}" class="${i===subjectIndex?'selected':''}"><td tabindex="0">${escapeHtml(roleName(x.role))}</td><td>${escapeHtml(stateName(x.state))}</td><td>${x.check_id??'(none)'}</td><td class="mono">${escapeHtml(x.sha)}</td></tr>`).join('');
 for(const tr of el('sourceBody').querySelectorAll('tr')){tr.onclick=()=>chooseSubject(Number(tr.dataset.subject));tr.ondblclick=()=>openUrl(cell().url);tr.querySelector('[tabindex]').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();chooseSubject(Number(tr.dataset.subject))}}}}
-function renderDetails(){const x=cell(),r=row();el('status').textContent=stateName(x.state);el('sha').textContent=x.sha;el('checkId').textContent=x.check_id??'(none)';el('appId').textContent=x.app_id??r.app_id??'(unknown)';el('conclusion').textContent=x.conclusion??'(none)';el('finding').textContent=r.finding.replaceAll('_',' ');el('interpretation').textContent=x.interpretation||'No additional recorded interpretation.';el('openRun').disabled=!safeLink(x.url);el('exportWitness').disabled=!r.minimal_witness;
+function renderDetails(){const x=cell(),r=row();el('status').textContent=stateName(x.state);el('sha').textContent=x.sha;el('checkId').textContent=x.check_id??'(none)';el('appId').textContent=x.app_id??r.app_id??'(unknown)';el('conclusion').textContent=x.conclusion??'(none)';el('finding').textContent=r.finding==='SAME_RECORDED_RESULT'?'NO CONTRAST':r.finding.replaceAll('_',' ');el('interpretation').textContent=x.interpretation||'No additional recorded interpretation.';el('openRun').disabled=!safeLink(x.url);el('exportWitness').disabled=!r.minimal_witness;
  el('footer').textContent=`${imported?'IMPORTED (source not authenticated)':'Bundled frozen evidence'}  |  ${doc.reports.length} cases  |  Historical enforcement: UNVERIFIED`}
 function renderAll(cases=true){if(cases)renderCases();renderChecks();renderSources();renderDetails()}
 function showDialog(title,text){el('dialogTitle').textContent=title;el('dialogText').textContent=text;el('dialog').showModal()}
@@ -38,7 +42,7 @@ el('openPr').onclick=()=>openUrl(caze().pr_url);el('openRun').onclick=()=>openUr
 el('copySha').onclick=()=>copy(cell().sha);el('copyId').onclick=()=>copy(cell().check_id);
 el('exportAudit').onclick=()=>download(doc,'VerdictLens_Audit.json');
 el('exportWitness').onclick=()=>{const w=makeWitness();if(w)download(w,`VerdictLens_${caze().pr}_Witness.json`)};
-el('rawRecord').onclick=()=>showDialog('Raw check record',JSON.stringify(row(),null,2));
+el('rawRecord').onclick=()=>showDialog('Selected check evidence JSON',JSON.stringify(row(),null,2));
 el('policy').onclick=()=>showDialog('Evidence policy and limits',`${caze().repository} #${caze().pr}\n\n${caze().historical_policy_provenance?'A source-versioned policy declaration is recorded. Historical live ruleset enforcement was not recovered.':'Historical required check settings were not independently recovered for this PR.'}\n\nSelected GitHub Check Runs are exact-commit observations, not full historical coverage. NO RECORD is not FAIL. Run failure does not establish root cause. The tool does not authorize merge. Imported JSON is format-checked but not source-authenticated.`);
 el('restore').onclick=()=>{doc=SOURCE;imported=false;chooseCase(0)};
 el('importAudit').onclick=()=>el('filePicker').click();

@@ -6,6 +6,7 @@ The tool works with saved public records and with GitHub Check Runs JSON supplie
 
 ## Open the tool
 
+- **Web demo:** [Open VerdictLens](https://risu-research.github.io/verdictlens/). The browser edition uses saved records and can import a Check Runs JSON bundle.
 - **Windows desktop:** with Python 3 and Tkinter installed, run `START_DESKTOP.bat` or `python VerdictLens_Desktop.pyw`.
 - **Browser:** open `VerdictLens_Offline.html` locally. No web server or installation is required.
 - **Command line:** run `python verdictlens_cli.py list` to see the bundled examples.
@@ -33,7 +34,7 @@ python verdictlens_cli.py import-check-runs \
 python verdictlens_cli.py --audit cli_audit.json inspect --pr 14805 --check dispatch
 ```
 
-In the desktop application, choose **File > Open GitHub Check Runs JSON**. In the browser viewer, choose **Open GitHub checks**. Select the same JSON file. The `dispatch` check has two recorded runs on the merged-result commit, which the tool identifies as ambiguous.
+In the desktop application, choose **File > Open GitHub Check Runs JSON**. In the browser viewer, choose **Import Check Runs JSON**. Select the same JSON file. The `dispatch` check has two recorded runs on the merged-result commit, which the tool identifies as ambiguous.
 
 For a new pull request, collect Check Runs through [GitHub's REST API](https://docs.github.com/en/rest/checks/runs) for each exact commit SHA. The `pack-check-runs` command combines the responses with explicit commit labels. See [REPRODUCE.md](REPRODUCE.md) for the input format and a complete example.
 

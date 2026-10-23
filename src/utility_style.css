@@ -14,7 +14,7 @@ select,input{background:white;min-height:27px;padding:3px 5px}
 .controls label{display:flex;align-items:center;gap:7px}
 #caseSelect{min-width:320px;max-width:100%}#viewSelect{min-width:180px}#filter{width:210px}
 .tablewrap{overflow:auto;background:#fff;border:1px solid #999}
-.checks .tablewrap{height:clamp(215px,36vh,390px)}
+.checks .tablewrap{height:auto;max-height:min(310px,40vh)}
 table{width:100%;border-collapse:collapse;table-layout:fixed;background:white;font:13px/1.35 "Segoe UI",Tahoma,Arial,sans-serif}
 th{text-align:left;background:#eee;font-weight:600;position:sticky;top:0;z-index:1}
 th,td{padding:4px 7px;vertical-align:top;border-right:1px solid #ccc;border-bottom:1px solid #e3e3e3;word-break:break-word}
@@ -30,6 +30,7 @@ tbody tr{cursor:default}tbody tr:hover{background:#f3f3f3}
 tbody tr.selected{background:#416d94;color:#fff}tbody tr.selected a{color:#fff}
 td[tabindex]:focus-visible{outline:2px solid #003e78;outline-offset:-2px}
 .mono{font-family:Consolas,"Courier New",monospace;font-size:12px;overflow-wrap:anywhere}
+.table-help{margin:5px 1px 0;font-size:12px;line-height:1.35;color:#333}.mobile-scroll-hint{display:none;margin:5px 1px 0;font-size:12px;color:#444}
 .info-line{padding:0 1px 8px}.check-title{display:flex;gap:15px;margin:2px 0 8px}
 .properties{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:5px 18px;margin:8px 0}
 .properties label{display:grid;grid-template-columns:125px minmax(0,1fr);gap:3px;min-width:0}
@@ -39,4 +40,4 @@ dialog{background:#dedede;color:#111;border:2px solid #888;padding:12px;max-widt
 dialog::backdrop{background:rgba(0,0,0,.22)}.dialog-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 dialog pre{font:12px/1.5 Consolas,monospace;background:#fff;border:1px solid #aaa;padding:10px;max-height:64vh;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 #notesDialog textarea{display:block;width:100%;min-height:180px;resize:vertical;padding:8px;background:#fff;margin-bottom:10px}
-@media(max-width:780px){body{margin:6px}.program-head{flex-wrap:wrap}.controls{align-items:stretch}.controls label{width:100%;justify-content:space-between}.controls select,.controls input{flex:1;min-width:0}#caseSelect{min-width:0}.properties{grid-template-columns:1fr}.properties label{grid-template-columns:110px minmax(0,1fr)}.tablewrap table{min-width:700px}.checks .tablewrap{height:310px}}
+@media(max-width:780px){body{margin:6px}.program-head{flex-wrap:wrap}.controls{align-items:stretch}.controls label{width:100%;justify-content:space-between}.controls select,.controls input{flex:1;min-width:0}#caseSelect{min-width:0}.properties{grid-template-columns:1fr}.properties label{grid-template-columns:110px minmax(0,1fr)}.tablewrap table{min-width:700px}.checks .tablewrap{height:auto;max-height:280px}.mobile-scroll-hint{display:block}}

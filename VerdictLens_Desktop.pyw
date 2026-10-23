@@ -65,7 +65,7 @@ class Inspector(tk.Tk):
         evidence.add_command(label='Open selected Check Run on GitHub',command=self.open_run)
         evidence.add_command(label='Copy commit SHA',command=lambda:self.copy_field('SHA'))
         evidence.add_command(label='Copy Check Run ID',command=lambda:self.copy_field('Check Run ID'))
-        evidence.add_command(label='Show raw selected check JSON',command=self.show_raw)
+        evidence.add_command(label='Show selected check evidence JSON',command=self.show_raw)
         menubar.add_cascade(label='Evidence',menu=evidence)
         tools=tk.Menu(menubar,tearoff=False)
         tools.add_command(label='Notes...',command=self.open_notes)
@@ -141,7 +141,7 @@ class Inspector(tk.Tk):
         buttons.grid(row=5,column=0,columnspan=5,sticky='w',pady=(7,2))
         for label,cmd in [('Open Check Run',self.open_run),('Copy SHA',lambda:self.copy_field('SHA')),
                           ('Copy Check ID',lambda:self.copy_field('Check Run ID')),
-                          ('Export witness...',self.export_witness),('Raw record...',self.show_raw)]:
+                          ('Export witness...',self.export_witness),('Evidence JSON...',self.show_raw)]:
             ttk.Button(buttons,text=label,command=cmd).pack(side='left',padx=(0,7))
         self.explain=ttk.Label(lower,text='',wraplength=950,justify='left')
         self.explain.grid(row=6,column=0,columnspan=5,sticky='w',pady=(6,1))
@@ -184,7 +184,7 @@ class Inspector(tk.Tk):
             if self.view_var.get()=='Contrasts only' and not r.get('minimal_witness'):continue
             if self.view_var.get()=='Incomplete only' and not any(x['state'] in ('NOT_OBSERVED','PENDING','AMBIGUOUS','INCONCLUSIVE') for x in r['cells']):continue
             states=[state_name(x['state']) for x in r['cells']]
-            finding=('CONTRAST' if r.get('minimal_witness') else 'INCOMPLETE' if any(x in states for x in ('NO RECORD','PENDING','AMBIGUOUS','INCONCLUSIVE')) else 'SAME RECORDED')
+            finding=('CONTRAST' if r.get('minimal_witness') else 'INCOMPLETE' if any(x in states for x in ('NO RECORD','PENDING','AMBIGUOUS','INCONCLUSIVE')) else 'NO CONTRAST')
             self.matrix.insert('','end',iid=str(i),values=(r['context'],*(states+['']*(3-len(states))),finding))
         self.summary_var.set(f"{c['repository']} #{c['pr']}   |   {len(c['rows'])} named checks   |   {c.get('verified_observations','?')} {'supplied Check Runs' if self.imported else 'selected public Check Runs'}")
         if self.matrix.exists(str(self.check_index)):
@@ -221,7 +221,7 @@ class Inspector(tk.Tk):
         values={'Status':state_name(x['state']),'SHA':x['sha'],'Check Run ID':str(x.get('check_id') or '(none)'),
                 'GitHub App ID':str(x.get('app_id') or r.get('app_id') or '(unknown)'),
                 'Conclusion':str(x.get('conclusion') or '(none)'),
-                'Finding':r['finding'].replace('_',' ')}
+                'Finding':'NO CONTRAST' if r['finding']=='SAME_RECORDED_RESULT' else r['finding'].replace('_',' ')}
         for k,v in values.items():self.detail_vars[k].set(v)
         self.explain.config(text=x.get('interpretation') or 'No more recorded interpretation.')
         imported='IMPORTED: source not authenticated' if self.imported else 'Bundled frozen evidence'
@@ -281,7 +281,7 @@ class Inspector(tk.Tk):
         t.insert('1.0',content);t.configure(state='disabled')
         return win
     def show_raw(self):
-        self.show_text('Selected check - raw audited record',json.dumps(self.current_row(),indent=2,ensure_ascii=False))
+        self.show_text('Selected check evidence JSON',json.dumps(self.current_row(),indent=2,ensure_ascii=False))
     def open_policy(self):
         c=self.current_case()
         if c.get('historical_policy_provenance'):

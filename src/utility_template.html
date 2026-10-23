@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VerdictLens V16 - Plain Utility</title>
+<title>VerdictLens - Check Run Inspector</title>
 <style>__CSS__</style></head><body>
-<header class="program-head"><strong>VerdictLens</strong><span>Check Run Inspector / v16 / offline evidence</span></header>
+<header class="program-head"><strong>VerdictLens</strong><span>Check Run Inspector / v16.1 / offline evidence</span></header>
 <main>
 <fieldset><legend>Selection</legend>
  <div class="controls">
@@ -14,6 +14,9 @@
 </fieldset>
 <fieldset class="checks"><legend>Recorded check outcomes</legend>
 <div class="tablewrap" tabindex="0"><table id="checkTable"><thead id="checkHead"></thead><tbody id="checkBody"></tbody></table></div>
+<p id="roleGuide" class="table-help"></p>
+<p class="table-help">PASS groups GitHub success, neutral, and skipped. NO RECORD means absent from supplied runs. Check names are recorded labels, not verified branch rules.</p>
+<p class="mobile-scroll-hint">Scroll the table sideways to see all columns.</p>
 </fieldset>
 <div id="caseSummary" class="info-line"></div>
 <fieldset><legend>Selected check / source records</legend>
@@ -28,12 +31,12 @@
  <label>Finding: <output id="finding"></output></label>
 </div>
 <div class="buttons">
- <button id="openRun">Open Check Run</button><button id="copySha">Copy SHA</button><button id="copyId">Copy Check ID</button><button id="exportWitness">Export witness...</button><button id="rawRecord">Raw record...</button>
+ <button id="openRun">Open Check Run</button><button id="copySha">Copy SHA</button><button id="copyId">Copy Check ID</button><button id="exportWitness">Export witness...</button><button id="rawRecord">Evidence JSON...</button>
 </div>
 <p id="interpretation" class="small"></p>
 </fieldset>
 <div class="buttons command-bar">
- <button id="openPr">Open pull request</button><button id="importAudit">Open audit JSON...</button><button id="importGithub">Open GitHub checks...</button><input id="githubPicker" type="file" accept=".json,application/json" hidden><input id="filePicker" type="file" accept=".json,application/json" hidden><button id="exportAudit">Save audit JSON...</button><button id="restore">Restore bundled</button><button id="policy">Policy / limits...</button><button id="notes">Notes...</button>
+ <button id="openPr">Open pull request</button><button id="importAudit">Open audit JSON...</button><button id="importGithub" title="Import a VerdictLens JSON bundle containing GitHub Check Runs for exact commit SHAs">Import Check Runs JSON...</button><input id="githubPicker" type="file" accept=".json,application/json" hidden><input id="filePicker" type="file" accept=".json,application/json" hidden><button id="exportAudit">Save audit JSON...</button><button id="restore">Restore bundled</button><button id="policy">Policy / limits...</button><button id="notes">Notes...</button>
 </div>
 <footer id="footer" role="status"></footer>
 </main>
