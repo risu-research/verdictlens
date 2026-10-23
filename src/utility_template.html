@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VerdictLens V16 - Plain Utility</title>
+<style>__CSS__</style></head><body>
+<header class="program-head"><strong>VerdictLens</strong><span>Check Run Inspector / v16 / offline evidence</span></header>
+<main>
+<fieldset><legend>Selection</legend>
+ <div class="controls">
+  <label>Pull request <select id="caseSelect" aria-label="Pull request"></select></label>
+  <label>Show <select id="viewSelect" aria-label="Show"><option value="all">All recorded checks</option><option value="contrasts">Contrasts only</option><option value="incomplete">Incomplete only</option></select></label>
+  <label>Find <input type="search" id="filter" placeholder="Check name" aria-label="Find check"></label>
+  <button id="clearFilter">Clear</button>
+ </div>
+</fieldset>
+<fieldset class="checks"><legend>Recorded check outcomes</legend>
+<div class="tablewrap" tabindex="0"><table id="checkTable"><thead id="checkHead"></thead><tbody id="checkBody"></tbody></table></div>
+</fieldset>
+<div id="caseSummary" class="info-line"></div>
+<fieldset><legend>Selected check / source records</legend>
+<div class="check-title"><span>Check:</span> <strong id="selectedCheck"></strong></div>
+<div class="tablewrap"><table id="sources"><thead><tr><th>Commit subject</th><th>Result</th><th>Check Run ID</th><th>Commit SHA</th></tr></thead><tbody id="sourceBody"></tbody></table></div>
+<div class="properties">
+ <label>Status: <output id="status"></output></label>
+ <label>SHA: <output id="sha" class="mono"></output></label>
+ <label>Check Run ID: <output id="checkId"></output></label>
+ <label>GitHub App ID: <output id="appId"></output></label>
+ <label>Conclusion: <output id="conclusion"></output></label>
+ <label>Finding: <output id="finding"></output></label>
+</div>
+<div class="buttons">
+ <button id="openRun">Open Check Run</button><button id="copySha">Copy SHA</button><button id="copyId">Copy Check ID</button><button id="exportWitness">Export witness...</button><button id="rawRecord">Raw record...</button>
+</div>
+<p id="interpretation" class="small"></p>
+</fieldset>
+<div class="buttons command-bar">
+ <button id="openPr">Open pull request</button><button id="importAudit">Open audit JSON...</button><button id="importGithub">Open GitHub checks...</button><input id="githubPicker" type="file" accept=".json,application/json" hidden><input id="filePicker" type="file" accept=".json,application/json" hidden><button id="exportAudit">Save audit JSON...</button><button id="restore">Restore bundled</button><button id="policy">Policy / limits...</button><button id="notes">Notes...</button>
+</div>
+<footer id="footer" role="status"></footer>
+</main>
+<dialog id="dialog"><div class="dialog-head"><strong id="dialogTitle"></strong><button id="closeDialog">Close</button></div><pre id="dialogText"></pre></dialog>
+<dialog id="notesDialog"><div class="dialog-head"><strong>Private analyst notes (not evidence)</strong><button id="closeNotes">Close</button></div><textarea id="notesText" rows="12" aria-label="Analyst notes"></textarea><div class="buttons"><button id="saveNotes">Save in session</button><button id="exportNotes">Export notes JSON...</button></div></dialog>
+<script>__JS__</script></body></html>

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+qa_output/
+*.log
+*.tmp
+*.bak
+*.aux
+*.out
+*.synctex.gz
+cli_audit.json
+new_audit.json
+new_checks.json
+witness.json

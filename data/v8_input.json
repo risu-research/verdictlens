@@ -1,0 +1,655 @@
+{
+  "schema": "verdictlens-v8-two-project-input",
+  "v7_corpus": {
+    "schema": "verdictlens-ci-evidence-v7",
+    "observed_date": "2026-10-23",
+    "retrieval": "Read-only GitHub API responses manually normalized. Exact metadata and check links; no signed API payloads; repository data may change.",
+    "scope": "Observed checks from public repositories, not full CI population or historical required-check certification.",
+    "current_ruleset": {
+      "id": 19633356,
+      "url": "https://api.github.com/repos/github/docs/rulesets/19633356",
+      "updated_at": "2026-10-20T18:49:45.476Z",
+      "required_count": 41,
+      "historical_applicability": "UNVERIFIED for October 15 event"
+    },
+    "cases": [
+      {
+        "id": "PR46333",
+        "repository": "github/docs",
+        "pr": 46333,
+        "pr_url": "https://github.com/github/docs/pull/46333",
+        "subjects": [
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "event": "merge_group"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c"
+          }
+        ],
+        "checks": [
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+            "context": "archives",
+            "app_id": 15368,
+            "id": 116417286222,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38733630221,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286222",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/149c8d68eee0054275d85a2859eeca044c46ef31/check-runs?check_name=archives&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "context": "archives",
+            "app_id": 15368,
+            "id": 116454980578,
+            "status": "completed",
+            "conclusion": "failure",
+            "run_id": 38744645305,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980578",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/c63f9057425892718b9cb2746a4b2d8f0fb506ad/check-runs?check_name=archives&per_page=5"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+            "context": "archives",
+            "app_id": 15368,
+            "id": 116456990045,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38745222480,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456990045",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/688c35b8cfab458944d717e91c52810b8e39eb4c/check-runs?check_name=archives&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+            "context": "assets",
+            "app_id": 15368,
+            "id": 116417286083,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38733630221,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286083",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/149c8d68eee0054275d85a2859eeca044c46ef31/check-runs?check_name=assets&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "context": "assets",
+            "app_id": 15368,
+            "id": 116454979753,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38744645305,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454979753",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/c63f9057425892718b9cb2746a4b2d8f0fb506ad/check-runs?check_name=assets&per_page=5"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+            "context": "assets",
+            "app_id": 15368,
+            "id": 116456989563,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38745222480,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989563",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/688c35b8cfab458944d717e91c52810b8e39eb4c/check-runs?check_name=assets&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+            "context": "article-api",
+            "app_id": 15368,
+            "id": 116417286184,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38733630221,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286184",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/149c8d68eee0054275d85a2859eeca044c46ef31/check-runs?check_name=article-api&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "context": "article-api",
+            "app_id": 15368,
+            "id": 116454980267,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38744645305,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980267",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/c63f9057425892718b9cb2746a4b2d8f0fb506ad/check-runs?check_name=article-api&per_page=5"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+            "context": "article-api",
+            "app_id": 15368,
+            "id": 116456989868,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38745222480,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989868",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/688c35b8cfab458944d717e91c52810b8e39eb4c/check-runs?check_name=article-api&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+            "context": "content-render",
+            "app_id": 15368,
+            "id": 116417286386,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38733630221,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286386",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/149c8d68eee0054275d85a2859eeca044c46ef31/check-runs?check_name=content-render&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "context": "content-render",
+            "app_id": 15368,
+            "id": 116454980681,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38744645305,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980681",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/c63f9057425892718b9cb2746a4b2d8f0fb506ad/check-runs?check_name=content-render&per_page=5"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+            "context": "content-render",
+            "app_id": 15368,
+            "id": 116456989736,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38745222480,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989736",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/688c35b8cfab458944d717e91c52810b8e39eb4c/check-runs?check_name=content-render&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+            "context": "links",
+            "app_id": 15368,
+            "id": 116417286214,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38733630221,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286214",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/149c8d68eee0054275d85a2859eeca044c46ef31/check-runs?check_name=links&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+            "context": "links",
+            "app_id": 15368,
+            "id": 116454980444,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38744645305,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980444",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/c63f9057425892718b9cb2746a4b2d8f0fb506ad/check-runs?check_name=links&per_page=5"
+          },
+          {
+            "role": "MERGED_RESULT",
+            "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+            "context": "links",
+            "app_id": 15368,
+            "id": 116456989739,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 38745222480,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989739",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/688c35b8cfab458944d717e91c52810b8e39eb4c/check-runs?check_name=links&per_page=5"
+          }
+        ],
+        "checked_contexts": [
+          "archives",
+          "assets",
+          "article-api",
+          "content-render",
+          "links"
+        ],
+        "case_date": "2026-10-15",
+        "log_witness": {
+          "check_id": 116454980578,
+          "source": "https://github.com/github/docs/actions/runs/38744645305/job/116454980578",
+          "test_suite": "src/archives/tests/deprecated-enterprise-versions.ts",
+          "tests_passed": 33,
+          "tests_failed": 1,
+          "assertion": "expected 404 to be 200",
+          "external_observation": "HTTP 503 while retrieving a historic CSS asset",
+          "causal_attribution": "NOT_DETERMINED"
+        },
+        "queue_job_observation": {
+          "workflow_jobs_total": 30,
+          "success": 29,
+          "failure": 1,
+          "source": "https://github.com/github/docs/actions/runs/38744645305"
+        }
+      },
+      {
+        "id": "PR46412",
+        "repository": "github/docs",
+        "pr": 46412,
+        "pr_url": "https://github.com/github/docs/pull/46412",
+        "subjects": [
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "event": "merge_group"
+          }
+        ],
+        "checks": [
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+            "context": "content-render",
+            "app_id": 15368,
+            "id": 120468412304,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39969589934,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412304",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087/check-runs?check_name=content-render&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "context": "content-render",
+            "app_id": 15368,
+            "id": 120474508774,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39971335362,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508774",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/205d63d65aa98df27c915faebb26710be6a9c787/check-runs?check_name=content-render&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+            "context": "lint-code",
+            "app_id": 15368,
+            "id": 120468410283,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39969589870,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/39969589870/job/120468410283",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087/check-runs?check_name=lint-code&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "context": "lint-code",
+            "app_id": 15368,
+            "id": 120474502692,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39971335172,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/39971335172/job/120474502692",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/205d63d65aa98df27c915faebb26710be6a9c787/check-runs?check_name=lint-code&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+            "context": "tools",
+            "app_id": 15368,
+            "id": 120468412673,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39969589934,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412673",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087/check-runs?check_name=tools&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "context": "tools",
+            "app_id": 15368,
+            "id": 120474508980,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39971335362,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508980",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/205d63d65aa98df27c915faebb26710be6a9c787/check-runs?check_name=tools&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+            "context": "article-api",
+            "app_id": 15368,
+            "id": 120468412354,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39969589934,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412354",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087/check-runs?check_name=article-api&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "context": "article-api",
+            "app_id": 15368,
+            "id": 120474508353,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39971335362,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508353",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/205d63d65aa98df27c915faebb26710be6a9c787/check-runs?check_name=article-api&per_page=5"
+          },
+          {
+            "role": "HEAD",
+            "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+            "context": "playwright-tests (playwright-rendering)",
+            "app_id": 15368,
+            "id": 120469006791,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39969590318,
+            "event": "pull_request_or_post_merge_observation",
+            "url": "https://github.com/github/docs/actions/runs/39969590318/job/120469006791",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087/check-runs?check_name=playwright-tests%20(playwright-rendering)&per_page=5"
+          },
+          {
+            "role": "MERGE_GROUP",
+            "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+            "context": "playwright-tests (playwright-rendering)",
+            "app_id": 15368,
+            "id": 120474501636,
+            "status": "completed",
+            "conclusion": "success",
+            "run_id": 39971335063,
+            "event": "merge_group",
+            "url": "https://github.com/github/docs/actions/runs/39971335063/job/120474501636",
+            "lookup_url": "https://api.github.com/repos/github/docs/commits/205d63d65aa98df27c915faebb26710be6a9c787/check-runs?check_name=playwright-tests%20(playwright-rendering)&per_page=5"
+          }
+        ],
+        "checked_contexts": [
+          "content-render",
+          "lint-code",
+          "tools",
+          "article-api",
+          "playwright-tests (playwright-rendering)"
+        ],
+        "case_date": "2026-10-23",
+        "queue_check_population": {
+          "merge_group": 49,
+          "head": 51,
+          "not_all_required": true
+        }
+      }
+    ]
+  },
+  "new_case": {
+    "id": "COMET_PR7016",
+    "repository": "apache/datafusion-comet",
+    "pr": 7016,
+    "pr_url": "https://github.com/apache/datafusion-comet/pull/7016",
+    "subjects": [
+      {
+        "role": "HEAD",
+        "sha": "29fca3916b0b4961c4767025449d18392341af5c"
+      },
+      {
+        "role": "MERGE_GROUP",
+        "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+        "event": "merge_group"
+      },
+      {
+        "role": "MERGED_RESULT",
+        "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+        "subject_description": "Successful merge_group commit, later identical PR merge_commit_sha",
+        "source_event": "merge_group"
+      }
+    ],
+    "checked_contexts": [
+      "Required Checks",
+      "PR Build (Linux) / Build Native Library",
+      "PR Build (macOS) / macos-14/Spark 4.0, JDK 17, Scala 2.13 [shuffle]"
+    ],
+    "checks": [
+      {
+        "role": "HEAD",
+        "sha": "29fca3916b0b4961c4767025449d18392341af5c",
+        "context": "Required Checks",
+        "app_id": 15368,
+        "id": 119782747033,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39753802210,
+        "event": "pull_request",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/29fca3916b0b4961c4767025449d18392341af5c/check-runs?check_name=Required%20Checks&per_page=10"
+      },
+      {
+        "role": "MERGE_GROUP",
+        "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+        "context": "Required Checks",
+        "app_id": 15368,
+        "id": 120289414102,
+        "status": "completed",
+        "conclusion": "failure",
+        "run_id": 39909098306,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/check-runs?check_name=Required%20Checks&per_page=10"
+      },
+      {
+        "role": "HEAD",
+        "sha": "29fca3916b0b4961c4767025449d18392341af5c",
+        "context": "PR Build (Linux) / Build Native Library",
+        "app_id": 15368,
+        "id": 119744435016,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39753802210,
+        "event": "pull_request",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119744435016",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/29fca3916b0b4961c4767025449d18392341af5c/check-runs?check_name=PR%20Build%20%28Linux%29%20/%20Build%20Native%20Library&per_page=10"
+      },
+      {
+        "role": "MERGE_GROUP",
+        "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+        "context": "PR Build (Linux) / Build Native Library",
+        "app_id": 15368,
+        "id": 120269433065,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39909098306,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120269433065",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/check-runs?check_name=PR%20Build%20%28Linux%29%20/%20Build%20Native%20Library&per_page=10"
+      },
+      {
+        "role": "MERGE_GROUP",
+        "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+        "context": "PR Build (macOS) / macos-14/Spark 4.0, JDK 17, Scala 2.13 [shuffle]",
+        "app_id": 15368,
+        "id": 120270694116,
+        "status": "completed",
+        "conclusion": "failure",
+        "run_id": 39909098306,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120270694116",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/check-runs?check_name=PR%20Build%20%28macOS%29%20/%20macos-14/Spark%204.0%2C%20JDK%2017%2C%20Scala%202.13%20%5Bshuffle%5D&per_page=10"
+      },
+      {
+        "role": "MERGED_RESULT",
+        "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+        "context": "Required Checks",
+        "app_id": 15368,
+        "id": 120336833604,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39919470510,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120336833604",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/50ab6b063ce69f651acfa6a457e87099f92b9efa/check-runs?check_name=Required%20Checks&per_page=10"
+      },
+      {
+        "role": "MERGED_RESULT",
+        "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+        "context": "PR Build (Linux) / Build Native Library",
+        "app_id": 15368,
+        "id": 120302758283,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39919470510,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120302758283",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/50ab6b063ce69f651acfa6a457e87099f92b9efa/check-runs?check_name=PR%20Build%20%28Linux%29%20/%20Build%20Native%20Library&per_page=10"
+      },
+      {
+        "role": "MERGED_RESULT",
+        "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+        "context": "PR Build (macOS) / macos-14/Spark 4.0, JDK 17, Scala 2.13 [shuffle]",
+        "app_id": 15368,
+        "id": 120315224475,
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 39919470510,
+        "event": "merge_group",
+        "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120315224475",
+        "lookup_url": "https://api.github.com/repos/apache/datafusion-comet/commits/50ab6b063ce69f651acfa6a457e87099f92b9efa/check-runs?check_name=PR%20Build%20%28macOS%29%20/%20macos-14/Spark%204.0%2C%20JDK%2017%2C%20Scala%202.13%20%5Bshuffle%5D&per_page=10"
+      }
+    ],
+    "queue_check_population": {
+      "run": 39909098306,
+      "total_jobs": 64,
+      "observed_from_paginated_pages": true,
+      "official_job": "Required Checks"
+    },
+    "log_witness": null,
+    "additional_same_sha_successful_run": {
+      "run_id": 39930565462,
+      "check_id": 120356220716,
+      "conclusion": "success",
+      "reason": "Second successful Required Checks on same SHA, retained as additional occurrence; primary selected run is the merge_group run for PR #7016."
+    }
+  },
+  "temporal_policy": {
+    "event_time": "2026-10-23T06:02:16Z",
+    "head_run_started": "2026-10-22T09:13:53Z",
+    "historical_policy_source_url": "https://github.com/apache/datafusion-comet/blob/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/.asf.yaml",
+    "versioned_policy": {
+      "path": ".asf.yaml",
+      "protected_branch": "main",
+      "required_context": "Required Checks",
+      "last_source_change_sha": "bf49f1e0283d9c2adb582542b653cd3268f88ae5",
+      "last_source_change_time": "2026-10-20T19:58:47Z",
+      "snapshots": {
+        "HEAD": {
+          "ref": "29fca3916b0b4961c4767025449d18392341af5c",
+          "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+          "url": "https://github.com/apache/datafusion-comet/blob/29fca3916b0b4961c4767025449d18392341af5c/.asf.yaml"
+        },
+        "MERGE_GROUP": {
+          "ref": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+          "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+          "url": "https://github.com/apache/datafusion-comet/blob/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/.asf.yaml"
+        },
+        "MERGED_RESULT": {
+          "ref": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+          "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+          "url": "https://github.com/apache/datafusion-comet/blob/50ab6b063ce69f651acfa6a457e87099f92b9efa/.asf.yaml"
+        }
+      }
+    },
+    "ruleset": {
+      "id": 22969349,
+      "enforcement": "active",
+      "created_at": "2026-09-11T21:08:30.417Z",
+      "updated_at": "2026-09-29T21:56:45.646Z",
+      "type": "merge_queue",
+      "url": "https://api.github.com/repos/apache/datafusion-comet/rulesets/22969349"
+    },
+    "history_access": {
+      "source": "GET /repos/.../rulesets/22969349/history",
+      "status_code": 401,
+      "meaning": "Historical ruleset versions not publicly readable; not proof of unchanged live enforcement."
+    },
+    "head_required_check": {
+      "name": "Required Checks",
+      "app_id": 15368,
+      "id": 119782747033
+    },
+    "queue_required_check": {
+      "name": "Required Checks",
+      "app_id": 15368,
+      "id": 120289414102
+    },
+    "code_snapshots_at_shas_match": true,
+    "successful_queue_run_started": "2026-10-23T07:41:35Z",
+    "final_merge_commit_sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+    "final_merge_sha_confirmation": "https://api.github.com/repos/apache/datafusion-comet/pulls/7016",
+    "selected_later_queue_run": 39919470510,
+    "additional_same_sha_successful_run": {
+      "run_id": 39930565462,
+      "check_id": 120356220716,
+      "conclusion": "success",
+      "reason": "Second successful Required Checks on same SHA, retained as additional occurrence; primary selected run is the merge_group run for PR #7016."
+    }
+  },
+  "causal_chain": {
+    "upstream_failed_job_id": 120270694116,
+    "required_check_id": 120289414102,
+    "log_assertions": {
+      "upstream": "The macOS shuffle job downloaded 54890 bytes named protoc-21.4-osx-aarch_64.zip, unzip reported missing end-of-central-directory, and process exited 9.",
+      "aggregator": "Required Checks job log shows pr_build_macos: failure and exits 1 with One or more upstream jobs did not succeed.",
+      "unproved": "Not known why downloaded asset lacked valid ZIP central directory. No assertion of code regression or release block."
+    },
+    "sources": [
+      "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120270694116",
+      "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+    ],
+    "recovery_observation": {
+      "run_id": 39919470510,
+      "required_check_id": 120336833604,
+      "previously_failed_macos_job_id": 120315224475,
+      "result": "success",
+      "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+      "created": "2026-10-23T07:41:35Z",
+      "pr_merged": true
+    }
+  },
+  "source_access": "public GitHub API + pinned GitHub repository source using read-only connector; no APIs run in artifact verifier"
+}

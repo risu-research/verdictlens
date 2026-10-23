@@ -1,0 +1,849 @@
+{
+  "schema": "verdictlens-v16-imported-offline-snapshot",
+  "v9": {
+    "schema": "verdictlens-v9-defensive-review"
+  },
+  "reports": [
+    {
+      "id": "IMPORTED_1_cli_cli_PR14805",
+      "repository": "cli/cli",
+      "pr": 14805,
+      "pr_url": "https://github.com/cli/cli/pull/14805",
+      "roles": [
+        "HEAD",
+        "MERGED_RESULT"
+      ],
+      "subjects": [
+        {
+          "role": "HEAD",
+          "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f"
+        },
+        {
+          "role": "MERGED_RESULT",
+          "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c"
+        }
+      ],
+      "rows": [
+        {
+          "context": "CodeQL",
+          "app_id": 57789,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623929853,
+              "url": "https://github.com/cli/cli/runs/120623929853",
+              "app_id": 57789,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 57789,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "CodeQL-Build (actions, none, security-and-quality)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623601729,
+              "url": "https://github.com/cli/cli/actions/runs/40014687005/job/120623601729",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630989531,
+              "url": "https://github.com/cli/cli/actions/runs/40016847503/job/120630989531",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "CodeQL-Build (go, manual, ./.github/codeql/codeql-config.yml)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623601753,
+              "url": "https://github.com/cli/cli/actions/runs/40014687005/job/120623601753",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630989162,
+              "url": "https://github.com/cli/cli/actions/runs/40016847503/job/120630989162",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "build (macos-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600541,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600541",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987654,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987654",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "build (ubuntu-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600422,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600422",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987754,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987754",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "build (windows-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600453,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600453",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987645,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987645",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "check-requirements / check-requirements",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606694,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606694",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "check-requirements / close-unmet-requirements",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606278,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606278",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "close-from-default-branch / close-from-default-branch",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606784,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606784",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "close-no-help-wanted",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606254,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606254",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "close-unmet-requirements",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606201,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606201",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "copilot-pull-request-reviewer",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623669100,
+              "url": "https://github.com/cli/cli/actions/runs/40014704327/job/120623669100",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "dispatch",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "AMBIGUOUS",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "2 Check Runs share this check name and App on one SHA. No arbitrary rerun was selected; filter the API response explicitly before comparison.",
+              "candidate_check_runs": [
+                {
+                  "id": 120647645284,
+                  "conclusion": "success",
+                  "status": "completed",
+                  "url": "https://github.com/cli/cli/actions/runs/40021717270/job/120647645284"
+                },
+                {
+                  "id": 120637913536,
+                  "conclusion": "success",
+                  "status": "completed",
+                  "url": "https://github.com/cli/cli/actions/runs/40018870035/job/120637913536"
+                }
+              ]
+            }
+          ],
+          "finding": "AMBIGUOUS_RUNS",
+          "minimal_witness": null
+        },
+        {
+          "context": "govulncheck",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600684,
+              "url": "https://github.com/cli/cli/actions/runs/40014686946/job/120623600684",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630988390,
+              "url": "https://github.com/cli/cli/actions/runs/40016847165/job/120630988390",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "integration-tests (macos-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600563,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600563",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987682,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987682",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "integration-tests (ubuntu-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600752,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600752",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987747,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987747",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "integration-tests (windows-latest)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623600139,
+              "url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600139",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630987849,
+              "url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987849",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "label-external / label_issues",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623604117,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623604117",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "lint",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120623601043,
+              "url": "https://github.com/cli/cli/actions/runs/40014686946/job/120623601043",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120630988179,
+              "url": "https://github.com/cli/cli/actions/runs/40016847165/job/120630988179",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null
+        },
+        {
+          "context": "linux",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120632142234,
+              "url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142234",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "macos",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120632142142,
+              "url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142142",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "no-response / noResponse",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120636906582,
+              "url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636906582",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "pitch-surface",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120636973846,
+              "url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636973846",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "ready-for-review",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120623606666,
+              "url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606666",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "release",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120636223290,
+              "url": "https://github.com/cli/cli/actions/runs/40017149075/job/120636223290",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "stale",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "skipped",
+              "check_id": 120636908261,
+              "url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636908261",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "validate-tag-name",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120632041980,
+              "url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632041980",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        },
+        {
+          "context": "windows",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No matching Check Run in the supplied bounded input. Not a recorded failure."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120632142172,
+              "url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142172",
+              "app_id": 15368,
+              "interpretation": "Check Run observed on the exact declared SHA. GitHub historical required-check policy was not recovered."
+            }
+          ],
+          "finding": "BOUNDED_EVIDENCE_GAP",
+          "minimal_witness": null
+        }
+      ],
+      "observed_contexts": 28,
+      "verified_observations": 39,
+      "contrasting_contexts": 0,
+      "classification": "IMPORTED_CHECK_RUN_OBSERVATIONS",
+      "source_authenticity": "USER_SUPPLIED_NOT_AUTHENTICATED",
+      "input_coverage": "ONLY_PROVIDED_CHECK_RUNS; NO HISTORICAL_POLICY_AUTHENTICATION",
+      "historical_policy_provenance": null,
+      "limitations": {
+        "historical_required_checks": "UNVERIFIED",
+        "no_record": "ABSENT_FROM_PROVIDED_SNAPSHOT_ONLY",
+        "merge_authorization": "NOT_ASSESSED",
+        "duplicates": "AMBIGUOUS_NOT_SILENTLY_RESOLVED"
+      }
+    }
+  ],
+  "scope": "User-supplied GitHub-shaped Check Runs. Source is NOT authenticated. Missing checks are missing from this bounded input only. No historical ruleset or merge eligibility inference.",
+  "provenance": "OFFLINE_USER_SUPPLIED_API_EXPORT",
+  "global_findings": {
+    "cases": 1,
+    "observations": 39,
+    "contrasting_contexts": 0,
+    "repositories": 1
+  }
+}

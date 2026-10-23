@@ -1,0 +1,1442 @@
+{
+  "schema": "verdictlens-trajectory-audit-v7",
+  "observed_date": "2026-10-23",
+  "source_snapshot_sha256": "48804f318d2aafc65b35771d8702671300aaebe732a8383c5081b897fdc2418b",
+  "reports": [
+    {
+      "id": "COMET_PR7016",
+      "repository": "apache/datafusion-comet",
+      "pr": 7016,
+      "pr_url": "https://github.com/apache/datafusion-comet/pull/7016",
+      "roles": [
+        "HEAD",
+        "MERGE_GROUP",
+        "MERGED_RESULT"
+      ],
+      "subjects": [
+        {
+          "role": "HEAD",
+          "sha": "29fca3916b0b4961c4767025449d18392341af5c"
+        },
+        {
+          "role": "MERGE_GROUP",
+          "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+          "event": "merge_group"
+        },
+        {
+          "role": "MERGED_RESULT",
+          "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+          "subject_description": "Successful merge_group commit, later identical PR merge_commit_sha",
+          "source_event": "merge_group"
+        }
+      ],
+      "rows": [
+        {
+          "context": "Required Checks",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "29fca3916b0b4961c4767025449d18392341af5c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 119782747033,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+              "state": "FAILED",
+              "conclusion": "failure",
+              "check_id": 120289414102,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102",
+              "app_id": 15368,
+              "interpretation": "Selected GitHub Check Run recorded a non-passing completed conclusion."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120336833604,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120336833604",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "DIFFERENT_RECORDED_RESULT",
+          "minimal_witness": {
+            "subjects": [
+              "HEAD",
+              "MERGE_GROUP"
+            ],
+            "check_ids": [
+              119782747033,
+              120289414102
+            ],
+            "shas": [
+              "29fca3916b0b4961c4767025449d18392341af5c",
+              "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38"
+            ],
+            "evidence_links": [
+              "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+              "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+            ],
+            "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+          },
+          "all_contrasting_pairs": [
+            {
+              "subjects": [
+                "HEAD",
+                "MERGE_GROUP"
+              ],
+              "check_ids": [
+                119782747033,
+                120289414102
+              ],
+              "shas": [
+                "29fca3916b0b4961c4767025449d18392341af5c",
+                "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38"
+              ],
+              "evidence_links": [
+                "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+                "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+              ],
+              "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+            },
+            {
+              "subjects": [
+                "MERGE_GROUP",
+                "MERGED_RESULT"
+              ],
+              "check_ids": [
+                120289414102,
+                120336833604
+              ],
+              "shas": [
+                "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+                "50ab6b063ce69f651acfa6a457e87099f92b9efa"
+              ],
+              "evidence_links": [
+                "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102",
+                "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120336833604"
+              ],
+              "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+            }
+          ]
+        },
+        {
+          "context": "PR Build (Linux) / Build Native Library",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "29fca3916b0b4961c4767025449d18392341af5c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 119744435016,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119744435016",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120269433065,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120269433065",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120302758283,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120302758283",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "PR Build (macOS) / macos-14/Spark 4.0, JDK 17, Scala 2.13 [shuffle]",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "29fca3916b0b4961c4767025449d18392341af5c",
+              "state": "NOT_OBSERVED",
+              "conclusion": null,
+              "check_id": null,
+              "url": null,
+              "app_id": 15368,
+              "interpretation": "No selected Check Run was recorded in this bounded sample; no failure assertion."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+              "state": "FAILED",
+              "conclusion": "failure",
+              "check_id": 120270694116,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120270694116",
+              "app_id": 15368,
+              "interpretation": "Selected GitHub Check Run recorded a non-passing completed conclusion."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120315224475,
+              "url": "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120315224475",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "INCOMPLETE_COMPARISON",
+          "minimal_witness": {
+            "subjects": [
+              "MERGE_GROUP",
+              "MERGED_RESULT"
+            ],
+            "check_ids": [
+              120270694116,
+              120315224475
+            ],
+            "shas": [
+              "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+              "50ab6b063ce69f651acfa6a457e87099f92b9efa"
+            ],
+            "evidence_links": [
+              "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120270694116",
+              "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120315224475"
+            ],
+            "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+          },
+          "all_contrasting_pairs": [
+            {
+              "subjects": [
+                "MERGE_GROUP",
+                "MERGED_RESULT"
+              ],
+              "check_ids": [
+                120270694116,
+                120315224475
+              ],
+              "shas": [
+                "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+                "50ab6b063ce69f651acfa6a457e87099f92b9efa"
+              ],
+              "evidence_links": [
+                "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120270694116",
+                "https://github.com/apache/datafusion-comet/actions/runs/39919470510/job/120315224475"
+              ],
+              "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+            }
+          ]
+        }
+      ],
+      "observed_contexts": 3,
+      "verified_observations": 8,
+      "contrasting_contexts": 2,
+      "minimal_case_witness": {
+        "subjects": [
+          "HEAD",
+          "MERGE_GROUP"
+        ],
+        "check_ids": [
+          119782747033,
+          120289414102
+        ],
+        "shas": [
+          "29fca3916b0b4961c4767025449d18392341af5c",
+          "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38"
+        ],
+        "evidence_links": [
+          "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+          "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+        ],
+        "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects",
+        "context": "Required Checks",
+        "app_id": 15368
+      },
+      "claim_ledger": [
+        {
+          "claim": "Matched context and publisher across reported commit subjects",
+          "status": "SUPPORTED_BY_INPUT_VALIDATION",
+          "evidence": "Each row is indexed by context, GitHub App ID, exact SHA and check ID"
+        },
+        {
+          "claim": "At least one contradictory recorded outcome across distinct SHA subjects",
+          "status": "SUPPORTED_BY_WITNESS",
+          "evidence": "Smallest contrasting pair of check-run IDs and URLs"
+        },
+        {
+          "claim": "The context was a mandatory check on the historical incident date",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Contemporaneous branch protection or effective ruleset snapshot plus ref and bypass scope"
+        },
+        {
+          "claim": "A remote service response uniquely caused the failed job",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Controlled rerun or independent causal diagnosis with comparable inputs"
+        },
+        {
+          "claim": "GitHub granted or denied merge permission based on these observations",
+          "status": "OUT_OF_SCOPE",
+          "required_evidence": "Authoritative merge decision and full contemporaneous protection/queue evaluation"
+        },
+        {
+          "claim": "Same versioned required-check declaration on HEAD and MERGE_GROUP subjects",
+          "status": "VERSIONED_DECLARATION_STABLE_BEFORE_OBSERVATION",
+          "evidence": "ASF .asf.yaml source blob at both exact commit subjects, source last change prior to incident"
+        },
+        {
+          "claim": "Underlying failing job explains aggregator failure in original logs",
+          "status": "LOG_SUPPORTED_FOR_JOB_DEPENDENCY",
+          "evidence": "Upstream job failure and Required Checks logs record pr_build_macos: failure"
+        }
+      ],
+      "classification": "OBSERVED_CROSS_SHA_DIVERGENCE",
+      "log_witness": null,
+      "queue_job_observation": null,
+      "queue_check_population": {
+        "run": 39909098306,
+        "total_jobs": 64,
+        "observed_from_paginated_pages": true,
+        "official_job": "Required Checks"
+      },
+      "limitations": {
+        "historical_required_checks": "UNVERIFIED",
+        "code_regression_causality": "NOT_ESTABLISHED",
+        "merge_authorization": "NOT_ASSESSED",
+        "test_merge_priority": "NOT_DERIVED_FROM_MERGE_GROUP",
+        "sampling": "Only specified contexts and subjects have been checked"
+      },
+      "historical_policy_provenance": {
+        "grade": "VERSIONED_DECLARATION_STABLE_BEFORE_OBSERVATION",
+        "checks": [
+          {
+            "gate": "source_path",
+            "pass": true,
+            "note": "ASF source-controlled repository policy"
+          },
+          {
+            "gate": "head_blob_pinned",
+            "pass": true,
+            "note": "Source content hash present on the HEAD SHA"
+          },
+          {
+            "gate": "HEAD_source_ref",
+            "pass": true,
+            "note": "Source blob queried at exact commit subject"
+          },
+          {
+            "gate": "MERGE_GROUP_source_ref",
+            "pass": true,
+            "note": "Source blob queried at exact commit subject"
+          },
+          {
+            "gate": "MERGED_RESULT_source_ref",
+            "pass": true,
+            "note": "Source blob queried at exact commit subject"
+          },
+          {
+            "gate": "policy_blob_same_both_subjects",
+            "pass": true,
+            "note": "Same pinned source content observed on both commit subjects"
+          },
+          {
+            "gate": "required_context_declared",
+            "pass": true,
+            "note": "Exact Required Checks string declared in protected_branches.main"
+          },
+          {
+            "gate": "policy_commit_before_event",
+            "pass": true,
+            "note": "Commit that most recently changed source policy predates queue run"
+          },
+          {
+            "gate": "ruleset_active",
+            "pass": true,
+            "note": "Active merge queue ruleset at retrieval"
+          },
+          {
+            "gate": "ruleset_created_before_event",
+            "pass": true,
+            "note": "Independent GitHub Ruleset creation predates queue run"
+          },
+          {
+            "gate": "ruleset_updated_before_event",
+            "pass": true,
+            "note": "Independent GitHub Ruleset latest update predates queue run"
+          },
+          {
+            "gate": "queue_event_after_head",
+            "pass": true,
+            "note": "HEAD run was already recorded when queue started"
+          },
+          {
+            "gate": "successful_queue_after_failure",
+            "pass": true,
+            "note": "A later successful queue event exists"
+          },
+          {
+            "gate": "merged_sha_is_successful_queue_sha",
+            "pass": true,
+            "note": "PR final merged commit matches the successful queue commit"
+          },
+          {
+            "gate": "queue_check_matches_context",
+            "pass": true,
+            "note": "Same provider and context"
+          },
+          {
+            "gate": "queue_provider_equal",
+            "pass": true,
+            "note": "GitHub application identity matches"
+          }
+        ],
+        "source_claim": "The checked commit snapshots contain the same version-controlled declaration: main requires Required Checks.",
+        "ruleset_claim": "An active merge_queue ruleset was created and updated before these observations.",
+        "enforcement_claim": "HISTORICAL_EFFECTIVE_BRANCH_PROTECTION_NOT_INDEPENDENTLY_RETRIEVED",
+        "history_endpoint": {
+          "source": "GET /repos/.../rulesets/22969349/history",
+          "status_code": 401,
+          "meaning": "Historical ruleset versions not publicly readable; not proof of unchanged live enforcement."
+        },
+        "boundaries": [
+          "Source control snapshots are not a signed record of live branch protection.",
+          "Merge queue is distinct from GitHub test-merge ref.",
+          "Head and queue run differ in commit, runner, and event context.",
+          "This check is not a claim of a software regression or denied merge authorization."
+        ]
+      },
+      "dependency_trace": {
+        "project": "apache/datafusion-comet",
+        "pr": 7016,
+        "same_required_context": {
+          "subjects": [
+            "HEAD",
+            "MERGE_GROUP"
+          ],
+          "check_ids": [
+            119782747033,
+            120289414102
+          ],
+          "shas": [
+            "29fca3916b0b4961c4767025449d18392341af5c",
+            "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38"
+          ],
+          "evidence_links": [
+            "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+            "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+          ],
+          "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+        },
+        "from_job": 120270694116,
+        "to_aggregator": 120289414102,
+        "log_assertions": {
+          "upstream": "The macOS shuffle job downloaded 54890 bytes named protoc-21.4-osx-aarch_64.zip, unzip reported missing end-of-central-directory, and process exited 9.",
+          "aggregator": "Required Checks job log shows pr_build_macos: failure and exits 1 with One or more upstream jobs did not succeed.",
+          "unproved": "Not known why downloaded asset lacked valid ZIP central directory. No assertion of code regression or release block."
+        },
+        "recovery_observation": {
+          "run_id": 39919470510,
+          "required_check_id": 120336833604,
+          "previously_failed_macos_job_id": 120315224475,
+          "result": "success",
+          "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+          "created": "2026-10-23T07:41:35Z",
+          "pr_merged": true
+        },
+        "interpretation": "Observed failed prerequisite appears as pr_build_macos: failure in Required Checks aggregation. ZIP unpack failure is recorded; why the ZIP was invalid remains unknown.",
+        "not_a_full_causal_proof": true
+      }
+    },
+    {
+      "id": "PR46333",
+      "repository": "github/docs",
+      "pr": 46333,
+      "pr_url": "https://github.com/github/docs/pull/46333",
+      "roles": [
+        "HEAD",
+        "MERGE_GROUP",
+        "MERGED_RESULT"
+      ],
+      "subjects": [
+        {
+          "role": "HEAD",
+          "sha": "149c8d68eee0054275d85a2859eeca044c46ef31"
+        },
+        {
+          "role": "MERGE_GROUP",
+          "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+          "event": "merge_group"
+        },
+        {
+          "role": "MERGED_RESULT",
+          "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c"
+        }
+      ],
+      "rows": [
+        {
+          "context": "archives",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116417286222,
+              "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286222",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+              "state": "FAILED",
+              "conclusion": "failure",
+              "check_id": 116454980578,
+              "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980578",
+              "app_id": 15368,
+              "interpretation": "Selected GitHub Check Run recorded a non-passing completed conclusion."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116456990045,
+              "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456990045",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "DIFFERENT_RECORDED_RESULT",
+          "minimal_witness": {
+            "subjects": [
+              "HEAD",
+              "MERGE_GROUP"
+            ],
+            "check_ids": [
+              116417286222,
+              116454980578
+            ],
+            "shas": [
+              "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "c63f9057425892718b9cb2746a4b2d8f0fb506ad"
+            ],
+            "evidence_links": [
+              "https://github.com/github/docs/actions/runs/38733630221/job/116417286222",
+              "https://github.com/github/docs/actions/runs/38744645305/job/116454980578"
+            ],
+            "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+          },
+          "all_contrasting_pairs": [
+            {
+              "subjects": [
+                "HEAD",
+                "MERGE_GROUP"
+              ],
+              "check_ids": [
+                116417286222,
+                116454980578
+              ],
+              "shas": [
+                "149c8d68eee0054275d85a2859eeca044c46ef31",
+                "c63f9057425892718b9cb2746a4b2d8f0fb506ad"
+              ],
+              "evidence_links": [
+                "https://github.com/github/docs/actions/runs/38733630221/job/116417286222",
+                "https://github.com/github/docs/actions/runs/38744645305/job/116454980578"
+              ],
+              "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+            },
+            {
+              "subjects": [
+                "MERGE_GROUP",
+                "MERGED_RESULT"
+              ],
+              "check_ids": [
+                116454980578,
+                116456990045
+              ],
+              "shas": [
+                "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+                "688c35b8cfab458944d717e91c52810b8e39eb4c"
+              ],
+              "evidence_links": [
+                "https://github.com/github/docs/actions/runs/38744645305/job/116454980578",
+                "https://github.com/github/docs/actions/runs/38745222480/job/116456990045"
+              ],
+              "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+            }
+          ]
+        },
+        {
+          "context": "assets",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116417286083,
+              "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286083",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116454979753,
+              "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454979753",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116456989563,
+              "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989563",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "article-api",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116417286184,
+              "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286184",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116454980267,
+              "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980267",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116456989868,
+              "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989868",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "content-render",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116417286386,
+              "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286386",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116454980681,
+              "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980681",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116456989736,
+              "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989736",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "links",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "149c8d68eee0054275d85a2859eeca044c46ef31",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116417286214,
+              "url": "https://github.com/github/docs/actions/runs/38733630221/job/116417286214",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "c63f9057425892718b9cb2746a4b2d8f0fb506ad",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116454980444,
+              "url": "https://github.com/github/docs/actions/runs/38744645305/job/116454980444",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGED_RESULT",
+              "sha": "688c35b8cfab458944d717e91c52810b8e39eb4c",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 116456989739,
+              "url": "https://github.com/github/docs/actions/runs/38745222480/job/116456989739",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        }
+      ],
+      "observed_contexts": 5,
+      "verified_observations": 15,
+      "contrasting_contexts": 1,
+      "minimal_case_witness": {
+        "subjects": [
+          "HEAD",
+          "MERGE_GROUP"
+        ],
+        "check_ids": [
+          116417286222,
+          116454980578
+        ],
+        "shas": [
+          "149c8d68eee0054275d85a2859eeca044c46ef31",
+          "c63f9057425892718b9cb2746a4b2d8f0fb506ad"
+        ],
+        "evidence_links": [
+          "https://github.com/github/docs/actions/runs/38733630221/job/116417286222",
+          "https://github.com/github/docs/actions/runs/38744645305/job/116454980578"
+        ],
+        "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects",
+        "context": "archives",
+        "app_id": 15368
+      },
+      "claim_ledger": [
+        {
+          "claim": "Matched context and publisher across reported commit subjects",
+          "status": "SUPPORTED_BY_INPUT_VALIDATION",
+          "evidence": "Each row is indexed by context, GitHub App ID, exact SHA and check ID"
+        },
+        {
+          "claim": "At least one contradictory recorded outcome across distinct SHA subjects",
+          "status": "SUPPORTED_BY_WITNESS",
+          "evidence": "Smallest contrasting pair of check-run IDs and URLs"
+        },
+        {
+          "claim": "The context was a mandatory check on the historical incident date",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Contemporaneous branch protection or effective ruleset snapshot plus ref and bypass scope"
+        },
+        {
+          "claim": "A remote service response uniquely caused the failed job",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Controlled rerun or independent causal diagnosis with comparable inputs"
+        },
+        {
+          "claim": "GitHub granted or denied merge permission based on these observations",
+          "status": "OUT_OF_SCOPE",
+          "required_evidence": "Authoritative merge decision and full contemporaneous protection/queue evaluation"
+        }
+      ],
+      "classification": "OBSERVED_CROSS_SHA_DIVERGENCE",
+      "log_witness": {
+        "check_id": 116454980578,
+        "source": "https://github.com/github/docs/actions/runs/38744645305/job/116454980578",
+        "test_suite": "src/archives/tests/deprecated-enterprise-versions.ts",
+        "tests_passed": 33,
+        "tests_failed": 1,
+        "assertion": "expected 404 to be 200",
+        "external_observation": "HTTP 503 while retrieving a historic CSS asset",
+        "causal_attribution": "NOT_DETERMINED"
+      },
+      "queue_job_observation": {
+        "workflow_jobs_total": 30,
+        "success": 29,
+        "failure": 1,
+        "source": "https://github.com/github/docs/actions/runs/38744645305"
+      },
+      "queue_check_population": null,
+      "limitations": {
+        "historical_required_checks": "UNVERIFIED",
+        "code_regression_causality": "NOT_ESTABLISHED",
+        "merge_authorization": "NOT_ASSESSED",
+        "test_merge_priority": "NOT_DERIVED_FROM_MERGE_GROUP",
+        "sampling": "Only specified contexts and subjects have been checked"
+      }
+    },
+    {
+      "id": "PR46412",
+      "repository": "github/docs",
+      "pr": 46412,
+      "pr_url": "https://github.com/github/docs/pull/46412",
+      "roles": [
+        "HEAD",
+        "MERGE_GROUP"
+      ],
+      "subjects": [
+        {
+          "role": "HEAD",
+          "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087"
+        },
+        {
+          "role": "MERGE_GROUP",
+          "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+          "event": "merge_group"
+        }
+      ],
+      "rows": [
+        {
+          "context": "content-render",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120468412304,
+              "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412304",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120474508774,
+              "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508774",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "lint-code",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120468410283,
+              "url": "https://github.com/github/docs/actions/runs/39969589870/job/120468410283",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120474502692,
+              "url": "https://github.com/github/docs/actions/runs/39971335172/job/120474502692",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "tools",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120468412673,
+              "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412673",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120474508980,
+              "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508980",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "article-api",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120468412354,
+              "url": "https://github.com/github/docs/actions/runs/39969589934/job/120468412354",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120474508353,
+              "url": "https://github.com/github/docs/actions/runs/39971335362/job/120474508353",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        },
+        {
+          "context": "playwright-tests (playwright-rendering)",
+          "app_id": 15368,
+          "cells": [
+            {
+              "role": "HEAD",
+              "sha": "63bc52bdec750429d8aa6b4b70d7f2c7bb6c4087",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120469006791,
+              "url": "https://github.com/github/docs/actions/runs/39969590318/job/120469006791",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            },
+            {
+              "role": "MERGE_GROUP",
+              "sha": "205d63d65aa98df27c915faebb26710be6a9c787",
+              "state": "SATISFIED",
+              "conclusion": "success",
+              "check_id": 120474501636,
+              "url": "https://github.com/github/docs/actions/runs/39971335063/job/120474501636",
+              "app_id": 15368,
+              "interpretation": "Selected Check Run has a GitHub-acceptable conclusion; not overall merge authorization."
+            }
+          ],
+          "finding": "SAME_RECORDED_RESULT",
+          "minimal_witness": null,
+          "all_contrasting_pairs": []
+        }
+      ],
+      "observed_contexts": 5,
+      "verified_observations": 10,
+      "contrasting_contexts": 0,
+      "minimal_case_witness": null,
+      "claim_ledger": [
+        {
+          "claim": "Matched context and publisher across reported commit subjects",
+          "status": "SUPPORTED_BY_INPUT_VALIDATION",
+          "evidence": "Each row is indexed by context, GitHub App ID, exact SHA and check ID"
+        },
+        {
+          "claim": "At least one contradictory recorded outcome across distinct SHA subjects",
+          "status": "NOT_OBSERVED_IN_SAMPLE",
+          "evidence": "No contrasting pair in the selected contexts"
+        },
+        {
+          "claim": "The context was a mandatory check on the historical incident date",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Contemporaneous branch protection or effective ruleset snapshot plus ref and bypass scope"
+        },
+        {
+          "claim": "A remote service response uniquely caused the failed job",
+          "status": "NOT_ESTABLISHED",
+          "required_evidence": "Controlled rerun or independent causal diagnosis with comparable inputs"
+        },
+        {
+          "claim": "GitHub granted or denied merge permission based on these observations",
+          "status": "OUT_OF_SCOPE",
+          "required_evidence": "Authoritative merge decision and full contemporaneous protection/queue evaluation"
+        }
+      ],
+      "classification": "NO_DIVERGENCE_IN_SAMPLED_CONTEXTS",
+      "log_witness": null,
+      "queue_job_observation": null,
+      "queue_check_population": {
+        "merge_group": 49,
+        "head": 51,
+        "not_all_required": true
+      },
+      "limitations": {
+        "historical_required_checks": "UNVERIFIED",
+        "code_regression_causality": "NOT_ESTABLISHED",
+        "merge_authorization": "NOT_ASSESSED",
+        "test_merge_priority": "NOT_DERIVED_FROM_MERGE_GROUP",
+        "sampling": "Only specified contexts and subjects have been checked"
+      }
+    }
+  ],
+  "current_ruleset": {
+    "id": 19633356,
+    "url": "https://api.github.com/repos/github/docs/rulesets/19633356",
+    "updated_at": "2026-10-20T18:49:45.476Z",
+    "required_count": 41,
+    "historical_applicability": "UNVERIFIED for October 15 event"
+  },
+  "scope": "Observed checks from public repositories, not full CI population or historical required-check certification.",
+  "provenance": "Read-only GitHub API responses manually normalized. Exact metadata and check links; no signed API payloads; repository data may change.",
+  "global_findings": {
+    "cases": 3,
+    "observations": 33,
+    "contrasting_contexts": 3,
+    "repositories": 2
+  },
+  "evidence_policy": {
+    "identity": "context + GitHub App ID + exact commit SHA",
+    "decision": "observed state on that subject only",
+    "root_cause": "requires independent causal controls",
+    "required_at_time": "requires contemporaneous ruleset evidence"
+  },
+  "v8": {
+    "schema": "verdictlens-v8-independent-cross-project-audit",
+    "case": "COMET_PR7016",
+    "temporal_policy": {
+      "grade": "VERSIONED_DECLARATION_STABLE_BEFORE_OBSERVATION",
+      "checks": [
+        {
+          "gate": "source_path",
+          "pass": true,
+          "note": "ASF source-controlled repository policy"
+        },
+        {
+          "gate": "head_blob_pinned",
+          "pass": true,
+          "note": "Source content hash present on the HEAD SHA"
+        },
+        {
+          "gate": "HEAD_source_ref",
+          "pass": true,
+          "note": "Source blob queried at exact commit subject"
+        },
+        {
+          "gate": "MERGE_GROUP_source_ref",
+          "pass": true,
+          "note": "Source blob queried at exact commit subject"
+        },
+        {
+          "gate": "MERGED_RESULT_source_ref",
+          "pass": true,
+          "note": "Source blob queried at exact commit subject"
+        },
+        {
+          "gate": "policy_blob_same_both_subjects",
+          "pass": true,
+          "note": "Same pinned source content observed on both commit subjects"
+        },
+        {
+          "gate": "required_context_declared",
+          "pass": true,
+          "note": "Exact Required Checks string declared in protected_branches.main"
+        },
+        {
+          "gate": "policy_commit_before_event",
+          "pass": true,
+          "note": "Commit that most recently changed source policy predates queue run"
+        },
+        {
+          "gate": "ruleset_active",
+          "pass": true,
+          "note": "Active merge queue ruleset at retrieval"
+        },
+        {
+          "gate": "ruleset_created_before_event",
+          "pass": true,
+          "note": "Independent GitHub Ruleset creation predates queue run"
+        },
+        {
+          "gate": "ruleset_updated_before_event",
+          "pass": true,
+          "note": "Independent GitHub Ruleset latest update predates queue run"
+        },
+        {
+          "gate": "queue_event_after_head",
+          "pass": true,
+          "note": "HEAD run was already recorded when queue started"
+        },
+        {
+          "gate": "successful_queue_after_failure",
+          "pass": true,
+          "note": "A later successful queue event exists"
+        },
+        {
+          "gate": "merged_sha_is_successful_queue_sha",
+          "pass": true,
+          "note": "PR final merged commit matches the successful queue commit"
+        },
+        {
+          "gate": "queue_check_matches_context",
+          "pass": true,
+          "note": "Same provider and context"
+        },
+        {
+          "gate": "queue_provider_equal",
+          "pass": true,
+          "note": "GitHub application identity matches"
+        }
+      ],
+      "source_claim": "The checked commit snapshots contain the same version-controlled declaration: main requires Required Checks.",
+      "ruleset_claim": "An active merge_queue ruleset was created and updated before these observations.",
+      "enforcement_claim": "HISTORICAL_EFFECTIVE_BRANCH_PROTECTION_NOT_INDEPENDENTLY_RETRIEVED",
+      "history_endpoint": {
+        "source": "GET /repos/.../rulesets/22969349/history",
+        "status_code": 401,
+        "meaning": "Historical ruleset versions not publicly readable; not proof of unchanged live enforcement."
+      },
+      "boundaries": [
+        "Source control snapshots are not a signed record of live branch protection.",
+        "Merge queue is distinct from GitHub test-merge ref.",
+        "Head and queue run differ in commit, runner, and event context.",
+        "This check is not a claim of a software regression or denied merge authorization."
+      ]
+    },
+    "dependency_trace": {
+      "project": "apache/datafusion-comet",
+      "pr": 7016,
+      "same_required_context": {
+        "subjects": [
+          "HEAD",
+          "MERGE_GROUP"
+        ],
+        "check_ids": [
+          119782747033,
+          120289414102
+        ],
+        "shas": [
+          "29fca3916b0b4961c4767025449d18392341af5c",
+          "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38"
+        ],
+        "evidence_links": [
+          "https://github.com/apache/datafusion-comet/actions/runs/39753802210/job/119782747033",
+          "https://github.com/apache/datafusion-comet/actions/runs/39909098306/job/120289414102"
+        ],
+        "claim": "Different recorded check outcomes for the same context and publisher on different commit subjects"
+      },
+      "from_job": 120270694116,
+      "to_aggregator": 120289414102,
+      "log_assertions": {
+        "upstream": "The macOS shuffle job downloaded 54890 bytes named protoc-21.4-osx-aarch_64.zip, unzip reported missing end-of-central-directory, and process exited 9.",
+        "aggregator": "Required Checks job log shows pr_build_macos: failure and exits 1 with One or more upstream jobs did not succeed.",
+        "unproved": "Not known why downloaded asset lacked valid ZIP central directory. No assertion of code regression or release block."
+      },
+      "recovery_observation": {
+        "run_id": 39919470510,
+        "required_check_id": 120336833604,
+        "previously_failed_macos_job_id": 120315224475,
+        "result": "success",
+        "sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+        "created": "2026-10-23T07:41:35Z",
+        "pr_merged": true
+      },
+      "interpretation": "Observed failed prerequisite appears as pr_build_macos: failure in Required Checks aggregation. ZIP unpack failure is recorded; why the ZIP was invalid remains unknown.",
+      "not_a_full_causal_proof": true
+    },
+    "provenance": {
+      "event_time": "2026-10-23T06:02:16Z",
+      "head_run_started": "2026-10-22T09:13:53Z",
+      "historical_policy_source_url": "https://github.com/apache/datafusion-comet/blob/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/.asf.yaml",
+      "versioned_policy": {
+        "path": ".asf.yaml",
+        "protected_branch": "main",
+        "required_context": "Required Checks",
+        "last_source_change_sha": "bf49f1e0283d9c2adb582542b653cd3268f88ae5",
+        "last_source_change_time": "2026-10-20T19:58:47Z",
+        "snapshots": {
+          "HEAD": {
+            "ref": "29fca3916b0b4961c4767025449d18392341af5c",
+            "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+            "url": "https://github.com/apache/datafusion-comet/blob/29fca3916b0b4961c4767025449d18392341af5c/.asf.yaml"
+          },
+          "MERGE_GROUP": {
+            "ref": "1f868a88398c8af93f2ebaa9b4eff6645d6bdf38",
+            "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+            "url": "https://github.com/apache/datafusion-comet/blob/1f868a88398c8af93f2ebaa9b4eff6645d6bdf38/.asf.yaml"
+          },
+          "MERGED_RESULT": {
+            "ref": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+            "blob_sha": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+            "url": "https://github.com/apache/datafusion-comet/blob/50ab6b063ce69f651acfa6a457e87099f92b9efa/.asf.yaml"
+          }
+        }
+      },
+      "ruleset": {
+        "id": 22969349,
+        "enforcement": "active",
+        "created_at": "2026-09-11T21:08:30.417Z",
+        "updated_at": "2026-09-29T21:56:45.646Z",
+        "type": "merge_queue",
+        "url": "https://api.github.com/repos/apache/datafusion-comet/rulesets/22969349"
+      },
+      "history_access": {
+        "source": "GET /repos/.../rulesets/22969349/history",
+        "status_code": 401,
+        "meaning": "Historical ruleset versions not publicly readable; not proof of unchanged live enforcement."
+      },
+      "head_required_check": {
+        "name": "Required Checks",
+        "app_id": 15368,
+        "id": 119782747033
+      },
+      "queue_required_check": {
+        "name": "Required Checks",
+        "app_id": 15368,
+        "id": 120289414102
+      },
+      "code_snapshots_at_shas_match": true,
+      "successful_queue_run_started": "2026-10-23T07:41:35Z",
+      "final_merge_commit_sha": "50ab6b063ce69f651acfa6a457e87099f92b9efa",
+      "final_merge_sha_confirmation": "https://api.github.com/repos/apache/datafusion-comet/pulls/7016",
+      "selected_later_queue_run": 39919470510,
+      "additional_same_sha_successful_run": {
+        "run_id": 39930565462,
+        "check_id": 120356220716,
+        "conclusion": "success",
+        "reason": "Second successful Required Checks on same SHA, retained as additional occurrence; primary selected run is the merge_group run for PR #7016."
+      }
+    },
+    "source_data_sha256": "6c89b7897cb914e4fc50f8f818dcf3ac7a9281c5f903e95117a3ff2c80e017ae"
+  },
+  "v9": {
+    "schema": "verdictlens-v9-defensive-review",
+    "evidence_version": "frozen public GitHub observations, retrieved previously; network not rerun in this offline audit",
+    "source_input_sha256": "6c89b7897cb914e4fc50f8f818dcf3ac7a9281c5f903e95117a3ff2c80e017ae",
+    "checked_api_lookup_urls": 33,
+    "temporal_provenance": {
+      "policy_grade": "VERSIONED_DECLARATION_STABLE_BEFORE_OBSERVATION",
+      "enforcement_grade": "HISTORICAL_LIVE_SETTINGS_UNAVAILABLE",
+      "source_blob_identity": "1aede2a81738049561c8e67b7bcd1e46a72af126",
+      "timeline_ordered": true,
+      "history_access": "HTTP 401",
+      "limitations": [
+        "The policy blob SHA is a recorded Git API result; the entire raw file is not embedded for independent byte hashing.",
+        "Version-controlled ASF declaration is not the complete past effective GitHub protection configuration.",
+        "Recorded job outcomes do not prove a code regression or unique root cause."
+      ]
+    },
+    "samples": [
+      {
+        "case_id": "COMET_PR7016",
+        "repository": "apache/datafusion-comet",
+        "pr": 7016,
+        "comparisons": [
+          {
+            "check": "Required Checks",
+            "outcomes": [
+              "SATISFIED",
+              "FAILED",
+              "SATISFIED"
+            ],
+            "difference": true,
+            "sample_complete": true
+          },
+          {
+            "check": "PR Build (Linux) / Build Native Library",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "PR Build (macOS) / macos-14/Spark 4.0, JDK 17, Scala 2.13 [shuffle]",
+            "outcomes": [
+              "NOT_OBSERVED",
+              "FAILED",
+              "SATISFIED"
+            ],
+            "difference": true,
+            "sample_complete": false
+          }
+        ],
+        "sample_only": true
+      },
+      {
+        "case_id": "PR46333",
+        "repository": "github/docs",
+        "pr": 46333,
+        "comparisons": [
+          {
+            "check": "archives",
+            "outcomes": [
+              "SATISFIED",
+              "FAILED",
+              "SATISFIED"
+            ],
+            "difference": true,
+            "sample_complete": true
+          },
+          {
+            "check": "assets",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "article-api",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "content-render",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "links",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          }
+        ],
+        "sample_only": true
+      },
+      {
+        "case_id": "PR46412",
+        "repository": "github/docs",
+        "pr": 46412,
+        "comparisons": [
+          {
+            "check": "content-render",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "lint-code",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "tools",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "article-api",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          },
+          {
+            "check": "playwright-tests (playwright-rendering)",
+            "outcomes": [
+              "SATISFIED",
+              "SATISFIED"
+            ],
+            "difference": false,
+            "sample_complete": true
+          }
+        ],
+        "sample_only": true
+      }
+    ],
+    "levels": {
+      "observed": "RECORDED_CHECK_OUTCOME",
+      "policy": "VERSIONED_SOURCE_DECLARATION",
+      "enforcement": "PAST_EFFECTIVE_GITHUB_SETTINGS_NOT_RECOVERED",
+      "root_cause": "UNKNOWN",
+      "authorization": "NOT_ASSESSED"
+    },
+    "no_new_external_findings": true
+  }
+}

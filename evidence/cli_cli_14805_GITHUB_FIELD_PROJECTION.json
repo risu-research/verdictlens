@@ -1,0 +1,454 @@
+{
+  "schema": "verdictlens-github-check-runs-v1",
+  "repository": "cli/cli",
+  "pr": 14805,
+  "subjects": [
+    {
+      "role": "HEAD",
+      "sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+      "check_runs": {
+        "total_count": 19,
+        "check_runs": [
+          {
+            "id": 120623929853,
+            "name": "CodeQL",
+            "app": {
+              "id": 57789
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/runs/120623929853"
+          },
+          {
+            "id": 120623669100,
+            "name": "copilot-pull-request-reviewer",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014704327/job/120623669100"
+          },
+          {
+            "id": 120623606784,
+            "name": "close-from-default-branch / close-from-default-branch",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606784"
+          },
+          {
+            "id": 120623606694,
+            "name": "check-requirements / check-requirements",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606694"
+          },
+          {
+            "id": 120623606666,
+            "name": "ready-for-review",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606666"
+          },
+          {
+            "id": 120623606278,
+            "name": "check-requirements / close-unmet-requirements",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606278"
+          },
+          {
+            "id": 120623606254,
+            "name": "close-no-help-wanted",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606254"
+          },
+          {
+            "id": 120623606201,
+            "name": "close-unmet-requirements",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623606201"
+          },
+          {
+            "id": 120623604117,
+            "name": "label-external / label_issues",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687325/job/120623604117"
+          },
+          {
+            "id": 120623601753,
+            "name": "CodeQL-Build (go, manual, ./.github/codeql/codeql-config.yml)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687005/job/120623601753"
+          },
+          {
+            "id": 120623601729,
+            "name": "CodeQL-Build (actions, none, security-and-quality)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014687005/job/120623601729"
+          },
+          {
+            "id": 120623601043,
+            "name": "lint",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686946/job/120623601043"
+          },
+          {
+            "id": 120623600752,
+            "name": "integration-tests (ubuntu-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600752"
+          },
+          {
+            "id": 120623600684,
+            "name": "govulncheck",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686946/job/120623600684"
+          },
+          {
+            "id": 120623600563,
+            "name": "integration-tests (macos-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600563"
+          },
+          {
+            "id": 120623600541,
+            "name": "build (macos-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600541"
+          },
+          {
+            "id": 120623600453,
+            "name": "build (windows-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600453"
+          },
+          {
+            "id": 120623600422,
+            "name": "build (ubuntu-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600422"
+          },
+          {
+            "id": 120623600139,
+            "name": "integration-tests (windows-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "17ac598e6afc43bb6206f074b05de9d63563a42f",
+            "html_url": "https://github.com/cli/cli/actions/runs/40014686856/job/120623600139"
+          }
+        ]
+      }
+    },
+    {
+      "role": "MERGED_RESULT",
+      "sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+      "check_runs": {
+        "total_count": 20,
+        "check_runs": [
+          {
+            "id": 120647645284,
+            "name": "dispatch",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40021717270/job/120647645284"
+          },
+          {
+            "id": 120637913536,
+            "name": "dispatch",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40018870035/job/120637913536"
+          },
+          {
+            "id": 120636973846,
+            "name": "pitch-surface",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636973846"
+          },
+          {
+            "id": 120636908261,
+            "name": "stale",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "skipped",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636908261"
+          },
+          {
+            "id": 120636906582,
+            "name": "no-response / noResponse",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40018574489/job/120636906582"
+          },
+          {
+            "id": 120636223290,
+            "name": "release",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40017149075/job/120636223290"
+          },
+          {
+            "id": 120632142234,
+            "name": "linux",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142234"
+          },
+          {
+            "id": 120632142172,
+            "name": "windows",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142172"
+          },
+          {
+            "id": 120632142142,
+            "name": "macos",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632142142"
+          },
+          {
+            "id": 120632041980,
+            "name": "validate-tag-name",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40017149075/job/120632041980"
+          },
+          {
+            "id": 120630989531,
+            "name": "CodeQL-Build (actions, none, security-and-quality)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847503/job/120630989531"
+          },
+          {
+            "id": 120630989162,
+            "name": "CodeQL-Build (go, manual, ./.github/codeql/codeql-config.yml)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847503/job/120630989162"
+          },
+          {
+            "id": 120630988390,
+            "name": "govulncheck",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847165/job/120630988390"
+          },
+          {
+            "id": 120630988179,
+            "name": "lint",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847165/job/120630988179"
+          },
+          {
+            "id": 120630987849,
+            "name": "integration-tests (windows-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987849"
+          },
+          {
+            "id": 120630987754,
+            "name": "build (ubuntu-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987754"
+          },
+          {
+            "id": 120630987747,
+            "name": "integration-tests (ubuntu-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987747"
+          },
+          {
+            "id": 120630987682,
+            "name": "integration-tests (macos-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987682"
+          },
+          {
+            "id": 120630987654,
+            "name": "build (macos-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987654"
+          },
+          {
+            "id": 120630987645,
+            "name": "build (windows-latest)",
+            "app": {
+              "id": 15368
+            },
+            "status": "completed",
+            "conclusion": "success",
+            "head_sha": "4f2cfe92e3499f8581bf39db77e0a1431fa7b55c",
+            "html_url": "https://github.com/cli/cli/actions/runs/40016847118/job/120630987645"
+          }
+        ]
+      }
+    }
+  ]
+}

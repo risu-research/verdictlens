@@ -1,0 +1,44 @@
+# Public GitHub REST Checks API observations; obtained 2026-10-23 via GitHub connector.
+# Format: role | check_run_id | name | app_id | conclusion | html_url
+# PR metadata: https://github.com/cli/cli/pull/14805
+# HEAD 17ac598e6afc43bb6206f074b05de9d63563a42f
+HEAD|120623929853|CodeQL|57789|success|https://github.com/cli/cli/runs/120623929853
+HEAD|120623669100|copilot-pull-request-reviewer|15368|success|https://github.com/cli/cli/actions/runs/40014704327/job/120623669100
+HEAD|120623606784|close-from-default-branch / close-from-default-branch|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606784
+HEAD|120623606694|check-requirements / check-requirements|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606694
+HEAD|120623606666|ready-for-review|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606666
+HEAD|120623606278|check-requirements / close-unmet-requirements|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606278
+HEAD|120623606254|close-no-help-wanted|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606254
+HEAD|120623606201|close-unmet-requirements|15368|skipped|https://github.com/cli/cli/actions/runs/40014687325/job/120623606201
+HEAD|120623604117|label-external / label_issues|15368|success|https://github.com/cli/cli/actions/runs/40014687325/job/120623604117
+HEAD|120623601753|CodeQL-Build (go, manual, ./.github/codeql/codeql-config.yml)|15368|success|https://github.com/cli/cli/actions/runs/40014687005/job/120623601753
+HEAD|120623601729|CodeQL-Build (actions, none, security-and-quality)|15368|success|https://github.com/cli/cli/actions/runs/40014687005/job/120623601729
+HEAD|120623601043|lint|15368|success|https://github.com/cli/cli/actions/runs/40014686946/job/120623601043
+HEAD|120623600752|integration-tests (ubuntu-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600752
+HEAD|120623600684|govulncheck|15368|success|https://github.com/cli/cli/actions/runs/40014686946/job/120623600684
+HEAD|120623600563|integration-tests (macos-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600563
+HEAD|120623600541|build (macos-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600541
+HEAD|120623600453|build (windows-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600453
+HEAD|120623600422|build (ubuntu-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600422
+HEAD|120623600139|integration-tests (windows-latest)|15368|success|https://github.com/cli/cli/actions/runs/40014686856/job/120623600139
+# MERGED_RESULT 4f2cfe92e3499f8581bf39db77e0a1431fa7b55c
+MERGED_RESULT|120647645284|dispatch|15368|success|https://github.com/cli/cli/actions/runs/40021717270/job/120647645284
+MERGED_RESULT|120637913536|dispatch|15368|success|https://github.com/cli/cli/actions/runs/40018870035/job/120637913536
+MERGED_RESULT|120636973846|pitch-surface|15368|skipped|https://github.com/cli/cli/actions/runs/40018574489/job/120636973846
+MERGED_RESULT|120636908261|stale|15368|skipped|https://github.com/cli/cli/actions/runs/40018574489/job/120636908261
+MERGED_RESULT|120636906582|no-response / noResponse|15368|success|https://github.com/cli/cli/actions/runs/40018574489/job/120636906582
+MERGED_RESULT|120636223290|release|15368|success|https://github.com/cli/cli/actions/runs/40017149075/job/120636223290
+MERGED_RESULT|120632142234|linux|15368|success|https://github.com/cli/cli/actions/runs/40017149075/job/120632142234
+MERGED_RESULT|120632142172|windows|15368|success|https://github.com/cli/cli/actions/runs/40017149075/job/120632142172
+MERGED_RESULT|120632142142|macos|15368|success|https://github.com/cli/cli/actions/runs/40017149075/job/120632142142
+MERGED_RESULT|120632041980|validate-tag-name|15368|success|https://github.com/cli/cli/actions/runs/40017149075/job/120632041980
+MERGED_RESULT|120630989531|CodeQL-Build (actions, none, security-and-quality)|15368|success|https://github.com/cli/cli/actions/runs/40016847503/job/120630989531
+MERGED_RESULT|120630989162|CodeQL-Build (go, manual, ./.github/codeql/codeql-config.yml)|15368|success|https://github.com/cli/cli/actions/runs/40016847503/job/120630989162
+MERGED_RESULT|120630988390|govulncheck|15368|success|https://github.com/cli/cli/actions/runs/40016847165/job/120630988390
+MERGED_RESULT|120630988179|lint|15368|success|https://github.com/cli/cli/actions/runs/40016847165/job/120630988179
+MERGED_RESULT|120630987849|integration-tests (windows-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987849
+MERGED_RESULT|120630987754|build (ubuntu-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987754
+MERGED_RESULT|120630987747|integration-tests (ubuntu-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987747
+MERGED_RESULT|120630987682|integration-tests (macos-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987682
+MERGED_RESULT|120630987654|build (macos-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987654
+MERGED_RESULT|120630987645|build (windows-latest)|15368|success|https://github.com/cli/cli/actions/runs/40016847118/job/120630987645

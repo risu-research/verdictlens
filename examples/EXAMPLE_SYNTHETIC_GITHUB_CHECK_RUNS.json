@@ -1,0 +1,31 @@
+{
+  "schema": "verdictlens-github-check-runs-v1",
+  "repository": "sample-lab/sample-project",
+  "pr": 12,
+  "subjects": [
+    {
+      "role": "HEAD",
+      "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "check_runs": {
+        "total_count": 3,
+        "check_runs": [
+          {"id": 1001, "name": "unit tests", "app": {"id": 901}, "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "status": "completed", "conclusion": "success", "html_url": null},
+          {"id": 1002, "name": "lint", "app": {"id": 901}, "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "status": "completed", "conclusion": "success", "html_url": null},
+          {"id": 1003, "name": "deploy", "app": {"id": 901}, "head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "status": "queued", "conclusion": null, "html_url": null}
+        ]
+      }
+    },
+    {
+      "role": "MERGE_GROUP",
+      "sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "check_runs": {
+        "total_count": 3,
+        "check_runs": [
+          {"id": 2001, "name": "unit tests", "app": {"id": 901}, "head_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "status": "completed", "conclusion": "failure", "html_url": null},
+          {"id": 2002, "name": "lint", "app": {"id": 901}, "head_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "status": "completed", "conclusion": "neutral", "html_url": null},
+          {"id": 2003, "name": "integration", "app": {"id": 901}, "head_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "status": "completed", "conclusion": "cancelled", "html_url": null}
+        ]
+      }
+    }
+  ]
+}
